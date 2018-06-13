@@ -2,8 +2,10 @@ var array = [];
 var arrayDisplayString = "";
 var countPush = 0;
 var pushButton = document.getElementById("push-button");
+var sortButton = document.getElementById("sort-button");
 var arrayDisplay = document.getElementById("array-display");
 pushButton.addEventListener("click", createArray);
+sortButton.addEventListener("click", sortingAlgorithms);
 
 function createArray () {
     var number = document.getElementById("number-input");
@@ -13,6 +15,10 @@ function createArray () {
         number.value = "";
         countPush++;
     }
+}
+
+function sortingAlgorithms () {
+    
 }
 
 // Bubble sort
@@ -32,4 +38,22 @@ bubbleSort = array => {
     return arrSorted;
 }
 
+// Merge sort
+mergeSort = array => {
+
+}
+
+// Selection sort
+selectionSort = array => {
+
+}
+
+// Insertion sort
+insertionSort = array => {
+
+}
+
 // Quick sort
+quickSort = array => {
+
+}
